@@ -1,0 +1,78 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Botón para mostrar/ocultar la lista de documentos */
+#toggleMenu {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#toggleMenu:hover {
+    background-color: #0056b3;
+}
+
+/* Sección del listado de documentos */
+.document-list {
+    background-color: #f4f4f4;
+    padding: 1em;
+    width: 300px;
+    float: left;
+}
+
+.document-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.document-list li {
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.document-list li:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para la visualización del documento */
+.document-viewer {
+    margin-left: 320px;
+    height: calc(100vh - 120px); /* Ajusta la altura para que ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border: none;
+    width: 80%;  /* Ajusta el ancho del documento como una revista */
+    height: 90%; /* Ajusta la altura del documento */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra para que parezca una revista */
+    transition: width 0.5s, height 0.5s;
+}
+
+/* Ocultar la sección de documentos por defecto */
+.hidden {
+    display: none;
+}
